@@ -27,7 +27,9 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
-
+import InventoryIcon from "@mui/icons-material/Inventory";
+import QrCodeIcon from "@mui/icons-material/QrCode";
+import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 
 import { useState } from 'react';
 import { getCurrentUser, logout } from '../services/auth';
@@ -108,6 +110,23 @@ const Layout = () => {
             { text: 'Dashboard', to: '/warehouse/dashboard', icon: <AssessmentIcon /> },
             { text: 'Busqueda', to: '/warehouse/allshipmentsdashboard', icon: <ScreenSearchDesktopIcon />},
           ]
+        },
+        {
+          text: "Producto Terminado",
+          icon: <InventoryIcon />,
+          key: "incomings",
+          subitems: [
+            {
+              text: "Ubicar Material",
+              to: "/warehouse/locatematerial",
+              icon: <QrCodeIcon />,
+            },
+            {
+              text: "Historial de salidas",
+              to: "/warehouse/materialhistory",
+              icon: <HistoryEduIcon />,
+            },
+          ],
         }
       );
     }
@@ -221,7 +240,7 @@ const Layout = () => {
                     ))}
                   </Collapse>
                   <Divider />
-                   <ThemeToggle />
+                   {/* <ThemeToggle /> */}
                    {/* <RadioGroup row value={mode} onChange={(e) => setMode(e.target.value)}>
                     <FormControlLabel value="light" control={<Radio />} label="Light" />
                     <FormControlLabel value="dark" control={<Radio />} label="Dark" />
@@ -254,6 +273,7 @@ const Layout = () => {
             );
           })}
         </List>
+        <ThemeToggle />
       </Drawer>
 
       {/* Contenido principal */}

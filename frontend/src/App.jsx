@@ -11,6 +11,8 @@ import CreatePart from './pages/Admin/CreatePart';
 import ProtectedRoute from './components/ProtectedRoute';
 import Datadashboard from './pages/Warehouse/Datadashboard';
 import Alldatadashboard from './pages/Warehouse/Alldatadashboard';
+import LocateMaterial from "./pages/Warehouse/Locatematerial";
+import MaterialHistory from "./pages/Warehouse/Materialhistory";
 
 function App() {
   return (
@@ -80,6 +82,24 @@ function App() {
             <Alldatadashboard showAll={true} warehouseView={true} />
           </ProtectedRoute>
         } />
+
+        <Route
+          path="/warehouse/locatematerial"
+          element={
+            <ProtectedRoute allowedRoles={["WAREHOUSE"]}>
+              <LocateMaterial showAll={true} warehouseView={true} />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/warehouse/materialhistory"
+          element={
+            <ProtectedRoute allowedRoles={["WAREHOUSE"]}>
+              <MaterialHistory showAll={true} warehouseView={true} />
+            </ProtectedRoute>
+          }
+        />
 
         {/* Redirección automática según rol */}
         <Route index element={

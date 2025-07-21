@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import UserViewSet, RequestViewSet, CustomTokenObtainPairView, PartNumberViewSet, ShipmentCreateView, ShipmentListView, ShipmentViewSet, PendingShipmentsDashboard, ShipmentsDashboard, get_last_shipment, TransportViewSet, get_shipments_today_and_tomorrow, reset_password_direct
+from .views import UserViewSet, RequestViewSet, CustomTokenObtainPairView, PartNumberViewSet, ShipmentCreateView, ShipmentListView, ShipmentViewSet, PendingShipmentsDashboard, ShipmentsDashboard, get_last_shipment, TransportViewSet, get_shipments_today_and_tomorrow, reset_password_direct, scan_pallet, location_status, delete_pallet, pallet_history, update_pallet_quantity
 from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
@@ -18,7 +18,7 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('shipments/', ShipmentCreateView.as_view(), name='shipment-create'),
     path('shipments/list/', ShipmentListView.as_view(), name='shipment-list'),
-    path('shipments/<int:pk>/approve/', ShipmentViewSet.as_view({'patch': 'approve'}), name='shipment-approve'),
+    #path('shipments/<int:pk>/approve/', ShipmentViewSet.as_view({'patch': 'approve'}), name='shipment-approve'),
     path('shipments/<int:pk>/update_status/', ShipmentViewSet.as_view({'patch': 'update_status'}), name='shipment-update-status'),
     path('users/<int:pk>/', UserViewSet.as_view({'patch': 'update'}), name='user-update-data'),
     path('shipments/dashboard/', PendingShipmentsDashboard.as_view(), name='shipments-dashboard'),
@@ -28,5 +28,10 @@ urlpatterns = [
     path('shipments/<int:pk>/update_add_albaran/', ShipmentViewSet.as_view({'patch': 'update_add_albaran'}), name='shipment-update-albaran'),
     path('shipments/<int:pk>/update_wh_comment/', ShipmentViewSet.as_view({'patch': 'update_wh_comment'}), name="shipment-update-whcomment"),
     path('shipments/<int:pk>/update_admin_comment/', ShipmentViewSet.as_view({'patch': 'update_admin_comment'}), name="shipment-update-admincomment"),
-    path('auth/reset-password/', reset_password_direct)
+    path('auth/reset-password/', reset_password_direct),
+    path('scan-pallet/', scan_pallet, name='scan_pallet'),
+    path('location-status/', location_status, name='location_status'),
+    path("pallets/<int:pallet_id>/", delete_pallet, name="delete_pallet"),
+    path("pallet-history/", pallet_history, name="pallet_history"),
+    path("update-pallet/<int:pk>/", update_pallet_quantity),
 ]

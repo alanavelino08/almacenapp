@@ -6276,3 +6276,72 @@ OSError: [Errno 22] Invalid argument
 2025-07-10 10:30:17.147936: wfastcgi.py 3.0.0 closed
 2025-07-10 10:31:20.638632: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
 2025-07-10 10:31:20.661209: wfastcgi.py 3.0.0 initialized
+2025-07-21 08:06:05.127810: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 08:06:05.149815: wfastcgi.py 3.0.0 initialized
+2025-07-21 08:31:51.496490: wfastcgi.py exiting because base\models.py has changed, matching .*((\.py)|(\.config))$
+2025-07-21 08:31:51.520897: Running on_exit tasks
+2025-07-21 08:32:04.105501: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 08:32:04.122526: wfastcgi.py 3.0.0 initialized
+2025-07-21 08:32:40.286757: wfastcgi.py exiting because base\migrations\0021_location_pallethistory_palletscan.py has changed, matching .*((\.py)|(\.config))$
+2025-07-21 08:32:40.310645: Running on_exit tasks
+2025-07-21 08:33:04.023470: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 08:33:04.042268: wfastcgi.py 3.0.0 initialized
+2025-07-21 08:58:22.973153: wfastcgi.py exiting because base\urls.py has changed, matching .*((\.py)|(\.config))$
+2025-07-21 08:58:23.000241: Running on_exit tasks
+2025-07-21 08:59:04.119627: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 08:59:04.142014: wfastcgi.py 3.0.0 initialized
+2025-07-21 09:00:47.094327: wfastcgi.py exiting because frontend\static\dist\web.config has changed, matching .*((\.py)|(\.config))$
+2025-07-21 09:00:47.121469: Running on_exit tasks
+2025-07-21 09:01:05.042292: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 09:01:05.073005: wfastcgi.py 3.0.0 initialized
+2025-07-21 09:02:03.685681: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 09:02:03.705145: wfastcgi.py 3.0.0 initialized
+2025-07-21 09:02:04.446171: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 09:02:04.464028: wfastcgi.py 3.0.0 initialized
+2025-07-21 09:04:52.957622: wfastcgi.py exiting because frontend\static\dist\web.config has changed, matching .*((\.py)|(\.config))$
+2025-07-21 09:04:52.958009: wfastcgi.py exiting because frontend\static\dist\web.config has changed, matching .*((\.py)|(\.config))$
+2025-07-21 09:04:52.977543: Running on_exit tasks
+2025-07-21 09:04:52.978430: Running on_exit tasks
+2025-07-21 09:04:52.977662: Running on_exit tasks
+2025-07-21 09:05:04.306939: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 09:05:04.327943: wfastcgi.py 3.0.0 initialized
+2025-07-21 11:46:14.558566: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2025-07-21 11:46:14.581167: Running on_exit tasks
+2025-07-21 11:46:14.599690: wfastcgi.py 3.0.0 closed
+2025-07-21 11:47:17.359574: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 11:47:17.383726: wfastcgi.py 3.0.0 initialized
+2025-07-21 12:36:18.175771: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 12:36:18.201341: wfastcgi.py 3.0.0 initialized
+2025-07-21 12:41:29.458557: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2025-07-21 12:41:29.475568: Running on_exit tasks
+2025-07-21 12:41:29.493044: wfastcgi.py 3.0.0 closed
+2025-07-21 14:22:12.396430: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 14:22:12.417861: wfastcgi.py 3.0.0 initialized
+2025-07-21 14:22:16.461493: wfastcgi.py will restart when files in C:\fourscreens\backend\ are changed: .*((\.py)|(\.config))$
+2025-07-21 14:22:16.483746: wfastcgi.py 3.0.0 initialized
+2025-07-21 14:27:29.353306: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2025-07-21 14:27:29.375692: Running on_exit tasks
+2025-07-21 14:27:29.398139: wfastcgi.py 3.0.0 closed
+2025-07-21 14:27:39.412177: Unhandled exception in wfastcgi.py: Traceback (most recent call last):
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 774, in main
+    record = read_fastcgi_record(fcgi_stream)
+  File "C:\fourscreens\venv\Lib\site-packages\wfastcgi.py", line 158, in read_fastcgi_record
+    data = stream.read(8)     # read record
+OSError: [Errno 22] Invalid argument
+2025-07-21 14:27:39.433722: Running on_exit tasks
+2025-07-21 14:27:39.459952: wfastcgi.py 3.0.0 closed
